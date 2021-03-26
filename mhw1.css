@@ -25,7 +25,8 @@ nav{
     display: flex;
     margin: auto;
     margin-top: 15px;
-    font-size: 0.5rem;
+    margin-bottom: 20px;
+    font-size: 0.6rem;
     height: 7vh;
     justify-content: space-around;
     align-items: center;
@@ -55,7 +56,6 @@ nav a:hover{
 /*header*/
 
   header{
-    margin-top: 20px;
     height: 65vh;
     background-image: url(https://images.alphacoders.com/686/686704.jpg);
     background-size: cover;
@@ -66,27 +66,23 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
 
 @media(max-width: 1050px){
     header{
       height: 45vh;
-      margin-top: 15px;
     }
   }
 
   @media(max-width: 850px){
     header{
       height: 35vh;
-      margin-top: 15px;
     }
   }
 
   @media(max-width: 550px){
     header{
       height: 25vh;
-      margin-top: 15px;
     }
   }
 
@@ -96,7 +92,7 @@ nav a:hover{
     font-size: 2rem;
     color: #e6caaf;
     text-transform: uppercase;
-    margin: auto;
+    width: 60vw;
     text-align: center;
     z-index: 1;
 }
@@ -153,12 +149,13 @@ nav a:hover{
 section{
     background-color: #ebc3b9;
     border-radius: 60px;
+    margin-bottom: 50px;
     width: 90vw;
     display: flex;
     flex-direction: column;
 }
 
-@media(max-width: 1050px){
+@media(max-width: 900px){
   section{
     width:95vw;
   }
@@ -175,7 +172,7 @@ section{
     border: #363434 1px solid;
 }
 
-@media(max-width: 850px){
+@media(max-width: 900px){
     section .paragrafo{
       display: flex;
       width: 90vw;
@@ -225,7 +222,6 @@ img {
 }
 
 .testo{
-    margin-top: 15px;
     font-size: 0.7rem;
     color: white;
     text-align: center;
@@ -233,20 +229,22 @@ img {
     font-style: italic;
     font-family: 'EB Garamond', serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+  
+    
     line-height: 35px;
 }
 
-@media(max-width: 1050px){
+@media(max-width: 1250px){
   .testo{
+    margin-top: -10px;
     font-size: 0.55rem;
   }
 }
 
-@media(max-width: 850px){
+@media(max-width: 900px){
   .testo{
     font-size: 0.8rem;
+    margin-top: -25px;
   }
 }
 
@@ -261,6 +259,7 @@ a.categoria{
     text-decoration: underline;
     margin-bottom: 15px;
     margin-top: 20px;
+    margin-bottom: 50px;
     font-size: 0.8rem;
     text-transform: uppercase;
     color: rgb(51, 154, 180);
@@ -268,14 +267,13 @@ a.categoria{
     font-family: 'Della Respira', serif;
 }
 
-@media(max-width: 1050px){
+@media(max-width: 1250px){
   a.categoria{
     font-size: 0.65rem;
-    margin-bottom: 5px;
   }
 }
 
-@media(max-width: 850px){
+@media(max-width: 900px){
   a.categoria{
     font-size: 0.8rem;
   }
@@ -299,7 +297,6 @@ footer{
     font-style: italic;
     letter-spacing: 1px;
     color: white;
-    margin-top: 5%;
     display: flex;
     align-items: center;
     background-color: black;
@@ -329,5 +326,7 @@ footer a:hover{
       font-size: 0.25rem;
   }
 }
+
+
 
 
