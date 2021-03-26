@@ -10,6 +10,7 @@ body{
 }
 
 article{
+  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,46 +20,42 @@ article{
 
 nav{
     background-color: black ;
-    top:25px;
     border-radius: 60px;
     width: 90vw;
     display: flex;
-    position: relative;
     margin: auto;
+    margin-top: 15px;
     font-size: 0.5rem;
-
     height: 7vh;
     justify-content: space-around;
     align-items: center;
     border: black;
-    margin-bottom: 20px; 
-    margin-top: -10px;   
+  
 }
 
-a{
-    margin-left: 10px;
+nav a{
     padding: 5px;
     font-family: 'Oswald', sans-serif;
-    cursor: pointer;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
   }
 
-@media(max-width: 500px){
-    a{
+@media(max-width: 550px){
+    nav a{
       font-size: 0.4rem;
     }
   }
   
-a:hover{
-      text-decoration: underline;  
+nav a:hover{
+      text-decoration: underline; 
+      cursor: pointer; 
   }
 
 /*header*/
 
   header{
-    margin-top: 2%;
+    margin-top: 20px;
     height: 65vh;
     background-image: url(https://images.alphacoders.com/686/686704.jpg);
     background-size: cover;
@@ -72,10 +69,17 @@ a:hover{
 
 }
 
-@media(max-width: 500px){
+@media(max-width: 1050px){
     header{
-      height: 200px;
-      margin-top: 10px;
+      height: 30vh;
+      margin-top: 15px;
+    }
+  }
+
+  @media(max-width: 550px){
+    header{
+      height: 25vh;
+      margin-top: 15px;
     }
   }
 
@@ -83,19 +87,29 @@ a:hover{
     font-weight: bold;
     font-family: 'Cormorant Unicase', serif;;
     font-size: 2rem;
-    color: #c7ae95;
+    color: #e6caaf;
     text-transform: uppercase;
-    width: 80vw;
     margin: auto;
     text-align: center;
     z-index: 1;
 }
 
-@media(max-width: 600px){
-    .titolo{
-      font-size: 1rem;
-    }
+@media(max-width: 1050px){
+  .titolo{
+    font-size: 1.4rem;
   }
+}
+@media(max-width: 850px){
+  .titolo{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 550px){
+  .titolo{
+    font-size: 0.7rem;
+  }
+}
   
 #overlay{
     background-color: rgba(0, 0, 0, 0.3);
@@ -111,30 +125,21 @@ a:hover{
 
 .sottotitolo{
     text-decoration: underline;
-    margin-top: 24px;
     font-size: 0.9rem;
     text-transform: uppercase;
     color: rgb(61, 153, 145);
-    font-weight: bold;
     letter-spacing: 2px;
-    font-family: normal;
-
-    margin: 1%;
-    cursor: pointer;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
     font-weight:normal;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
-@media(max-width: 500px){
-    .sottotitolo{
-     font-size: 0.4rem;
-    }
+@media(max-width: 550px){
+  .sottotitolo{
+    font-size: 0.6rem;
   }
-
-a.sottotitolo:hover{
-    background-color:  rgb(61, 153, 145); ;
-    color: white;
-    border-radius: 20px;
-
 }
 
 /*section*/
@@ -147,22 +152,29 @@ section{
     flex-direction: column;
 }
 
+@media(max-width: 1050px){
+  section{
+    width:95vw;
+  }
+}
+
 .paragrafo{
     background-color:#363434;
     width: 80vw;
     display: flex;
     flex-direction: row;
-    margin:auto;
+    margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-   
+    border: #363434 1px solid;
 }
 
-@media(max-width: 500px){
+@media(max-width: 1050px){
     section .paragrafo{
       display: flex;
-      width: 80vw;
+      width: 90vw;
       flex-direction: column;
+      align-items: center;
       margin: auto;
       margin-top: 30px;
     margin-bottom: 30px;
@@ -170,94 +182,97 @@ section{
   }
 
 .foto{
-    width: 50%;
-    height: 50vh;
-    margin: 2px;
+    width: 45vw;
 }
 
-@media(max-width: 500px){
-    .foto{
-      width: 79vw;
-      height: 35vh;
-    
-    }
+@media(max-width: 1050px){
+  .foto{
+    width: 50vw;
   }
+}
   
 img {
     width: 100%;
-    height: 100%;
-    background-size: cover;
     border-radius: 60px;
 }  
+
+@media(max-width: 1050px){
+  img{
+    width: 100%;
+  }
+}
 
 .scritte{
     width: 40vw;
     display: flex;
+    margin-right: 10px;
+    margin-left: 10px ;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    font-style: italic;
-    font-family: 'Della Respira', serif;
-   
 }
 
-@media(max-width: 500px){
+@media(max-width: 1050px){
   .scritte{
-      margin-left: 15px;
+    width: 90%;
   }
 }
 
-
 .testo{
-    margin-top: 24px;
+    margin-top: 15px;
     font-size: 0.7rem;
     color: white;
     text-align: center;
     margin-bottom: -15px;
-    text-transform: lowercase;
+    font-style: italic;
     font-family: 'EB Garamond', serif;
     display: flex;
     justify-content: center;
+    align-items: center;
     line-height: 35px;
-  
 }
 
-@media(max-width: 500px){
-    .testo{
-        width: 70vw;
-        font-size: 0.5rem;
-        margin: auto;
-    }
+@media(max-width: 1050px){
+  .testo{
+    font-size: 0.8rem;
   }
+}
 
-a.sezione{
+@media(max-width: 550px){
+  .testo{
+    font-size: 0.6rem;
+  }
+}
+
+a.categoria{
     
     text-decoration: underline;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: 20px;
     font-size: 0.8rem;
     text-transform: uppercase;
-    color: rgb(61, 153, 145);
-    font-weight: bold;
+    color: rgb(51, 154, 180);
     letter-spacing: 2px;
-    font-weight:normal;
+    font-family: 'Della Respira', serif;
 }
 
-a.sezione:hover{
-  color: rgba(61, 153, 145, 0.6);
-}
-
-@media(max-width: 500px){
-    a.sezione{
-      
-      width: 60vw;
-      margin-top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.4rem;
-    }
+@media(max-width: 1050px){
+  a.categoria{
+    font-size: 0.8rem;
+    margin-bottom: 5px;
   }
+}
+
+@media(max-width: 1050px){
+  a.categoria{
+    font-size: 0.6rem;
+  }
+}
+
+a.categoria:hover{
+  color:rgba(51, 154, 180, 0.6);
+  cursor: pointer;
+}
 
 /*footer*/
 
@@ -266,7 +281,6 @@ footer{
     font-style: italic;
     letter-spacing: 1px;
     color: white;
-    justify-content: center;
     margin-top: 5%;
     display: flex;
     align-items: center;
@@ -274,14 +288,27 @@ footer{
     height: 20vh;
     width: 100vw;
     font-size: 0.4rem;
-    display: flex;
     justify-content: space-around;
 }
 
-@media(max-width: 500px){
-  footer{
-      font-size: 0.25rem;
+footer a{
+  text-transform:uppercase;
+  font-size: 0.6rem;
+  font-style: normal;
+  margin-right: 30px;
+}
 
+footer a:hover{
+  text-decoration: underline;  
+  cursor: pointer;
+}
+
+@media(max-width: 850px){
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      font-size: 0.25rem;
   }
 }
 
