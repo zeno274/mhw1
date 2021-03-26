@@ -71,7 +71,7 @@ nav a:hover{
 
 @media(max-width: 1050px){
     header{
-      height: 30vh;
+      height: 45vh;
       margin-top: 15px;
     }
   }
