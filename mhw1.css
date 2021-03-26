@@ -71,6 +71,8 @@ nav a:hover{
 
 @media(max-width: 1050px){
     header{
+      background-size: cover;
+      background-position: center;
       height: 45vh;
       margin-top: 15px;
     }
@@ -168,7 +170,7 @@ section{
     border: #363434 1px solid;
 }
 
-@media(max-width: 1050px){
+@media(max-width: 850px){
     section .paragrafo{
       display: flex;
       width: 90vw;
@@ -186,7 +188,7 @@ section{
 
 @media(max-width: 1050px){
   .foto{
-    width: 60vw;
+    width: 100%;
   }
 }
   
@@ -233,13 +235,19 @@ img {
 
 @media(max-width: 1050px){
   .testo{
+    font-size: 0.55rem;
+  }
+}
+
+@media(max-width: 850px){
+  .testo{
     font-size: 0.8rem;
   }
 }
 
-@media(max-width: 550px){
+@media(max-width: 500px){
   .testo{
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 }
 
@@ -257,12 +265,18 @@ a.categoria{
 
 @media(max-width: 1050px){
   a.categoria{
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     margin-bottom: 5px;
   }
 }
 
-@media(max-width: 1050px){
+@media(max-width: 850px){
+  a.categoria{
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 500px){
   a.categoria{
     font-size: 0.6rem;
   }
