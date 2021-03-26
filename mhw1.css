@@ -124,7 +124,6 @@ nav a:hover{
 /*sottotitolo*/
 
 .sottotitolo{
-    text-decoration: underline;
     font-size: 0.9rem;
     text-transform: uppercase;
     color: rgb(61, 153, 145);
@@ -187,7 +186,7 @@ section{
 
 @media(max-width: 1050px){
   .foto{
-    width: 50vw;
+    width: 60vw;
   }
 }
   
