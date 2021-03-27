@@ -48,7 +48,7 @@ nav a{
     }
   }
   
-nav a:hover{
+nav a:hover, footer a:hover{
       text-decoration: underline; 
       cursor: pointer; 
   }
@@ -86,7 +86,7 @@ nav a:hover{
     }
   }
 
-.titolo{
+#titolo{
     font-weight: bold;
     font-family: 'Cormorant Unicase', serif;;
     font-size: 2rem;
@@ -98,7 +98,7 @@ nav a:hover{
 }
 
 @media(max-width: 1050px){
-  .titolo{
+  #titolo{
     font-size: 1.4rem;
   }
 }
@@ -109,7 +109,7 @@ nav a:hover{
 }
 
 @media(max-width: 550px){
-  .titolo{
+  #titolo{
     font-size: 0.7rem;
   }
 }
@@ -126,20 +126,19 @@ nav a:hover{
 
 /*sottotitolo*/
 
-.sottotitolo{
+#sottotitolo{
     font-size: 0.9rem;
     text-transform: uppercase;
     color: rgb(61, 153, 145);
     letter-spacing: 2px;
     font-family: 'Merriweather', serif;
-    font-weight: bold;
     font-weight:normal;
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
 @media(max-width: 550px){
-  .sottotitolo{
+  #sottotitolo{
     font-size: 0.6rem;
   }
 }
@@ -169,7 +168,7 @@ section{
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    border: #363434 1px solid;
+    border:1px solid #363434;
 }
 
 @media(max-width: 900px){
@@ -221,6 +220,41 @@ img {
   }
 }
 
+a.categoria{
+    
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: rgb(51, 154, 180);
+  letter-spacing: 2px;
+  font-family: 'Della Respira', serif;
+}
+
+@media(max-width: 1250px){
+a.categoria{
+  font-size: 0.65rem;
+}
+}
+
+@media(max-width: 900px){
+a.categoria{
+  font-size: 0.8rem;
+}
+}
+
+@media(max-width: 500px){
+a.categoria{
+  font-size: 0.6rem;
+}
+}
+
+a.categoria:hover{
+color:rgba(51, 154, 180, 0.6);
+cursor: pointer;
+}
+
 .testo{
     font-size: 0.7rem;
     color: white;
@@ -229,8 +263,6 @@ img {
     font-style: italic;
     font-family: 'EB Garamond', serif;
     display: flex;
-  
-    
     line-height: 35px;
 }
 
@@ -252,42 +284,6 @@ img {
   .testo{
     font-size: 0.5rem;
   }
-}
-
-a.categoria{
-    
-    text-decoration: underline;
-    margin-bottom: 15px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    color: rgb(51, 154, 180);
-    letter-spacing: 2px;
-    font-family: 'Della Respira', serif;
-}
-
-@media(max-width: 1250px){
-  a.categoria{
-    font-size: 0.65rem;
-  }
-}
-
-@media(max-width: 900px){
-  a.categoria{
-    font-size: 0.8rem;
-  }
-}
-
-@media(max-width: 500px){
-  a.categoria{
-    font-size: 0.6rem;
-  }
-}
-
-a.categoria:hover{
-  color:rgba(51, 154, 180, 0.6);
-  cursor: pointer;
 }
 
 /*footer*/
@@ -313,11 +309,6 @@ footer a{
   margin-right: 30px;
 }
 
-footer a:hover{
-  text-decoration: underline;  
-  cursor: pointer;
-}
-
 @media(max-width: 850px){
   footer{
     display: flex;
@@ -326,6 +317,9 @@ footer a:hover{
       font-size: 0.25rem;
   }
 }
+
+
+
 
 
 
